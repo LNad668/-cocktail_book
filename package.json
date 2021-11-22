@@ -1,0 +1,23 @@
+{
+  "name": "-cocktail_book",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "source": "src/index.html",
+  "scripts": {
+    "start":"parcel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LNad668/-cocktail_book.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LNad668/-cocktail_book/issues"
+  },
+  "homepage": "https://github.com/LNad668/-cocktail_book#readme",
+  "devDependencies": {
+    "parcel": "^2.0.1"
+  }
+}

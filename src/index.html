@@ -6,13 +6,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Magic potion</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="shortcut icon" href="assets/magic-potion.png" type="image/png">
     <link rel="stylesheet" href="index.css">
     <script type="module" src="index.js"></script>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        header,
+        footer {
+            background-color: black;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .column {
+
+            width: 50%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
-    <h1> Hello girls!</h1>
+    <header>
+        <h1> Hello girls!</h1>
+    </header>
+
+    <main>
+        <div class="row">
+            <div class="column">
+                <img src="./assets/main-img.svg">
+            </div>
+            <div class="column" style="background-color:rgba(153, 107, 96, 1);">
+                <div>
+                    <h2>Alcohol for the modern drinker</h2>
+                    <p>Light and refreshing flavors made with real, clean ingredients you can feel good about. Just
+                        pour,
+                        sip, and enjoy.</p>
+
+                    <button type="button" class="btn btn-outline-dark">create your recipe</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div style="color: khaki;">Тут будут картинки соц сетей </div>
+
+    </footer>
+
 
 </body>
 

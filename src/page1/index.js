@@ -10,7 +10,7 @@ fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a')
             let ingr = document.createElement("p");
             let img = document.createElement("img");
             let link = document.createElement("a");
-            link.href = "/thirdproject/cocktail_book/src/page2/details.html";
+            link.href = "/cocktail_book/src/page2/details.html";
 
             link.addEventListener("click", () => {
                 localStorage.setItem("details", JSON.stringify(drinks[i]))

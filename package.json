@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "source": "src/index.html",
+  
   "scripts": {
-    "start":"parcel"
+    "page1":"parcel page1/index.html",
+    "page2":"parcel page2/details.html"
   },
   "repository": {
     "type": "git",

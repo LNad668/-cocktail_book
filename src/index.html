@@ -29,53 +29,143 @@
             justify-content: center;
         }
 
-        .column {
-            width: 50%;
-            height: 100%;
-            margin: 0;
-            padding: 0;
+        nav {
+            display: grid;
+            align-items: center;
+            justify-content: center;
         }
 
-        img {
-            height: 100%;
-            width: 100%;
+        main {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (max-width: 459px) {
+            .main {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .src {
+                display: none;
+            }
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1> Hello girls!</h1>
+        <img src="./assets/logo.svg">
     </header>
-
-    <main>
-        <div class="row">
-            <div class="column">
-                <img src="./assets/main-img.svg">
-            </div>
-            <div class="column" style="background-color:rgba(153, 107, 96, 1);">
+    <main class="main">
+        <div class="src">
+            <img src="./assets/main-img.svg" width="100%">
+        </div>
+        <div style="background-color:rgba(153, 107, 96, 1);">
+            <div>
                 <div>
-                    <div>
-                        <ul class="nav justify-content-end">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    Сreate your own cocktail</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">My cocktail collection</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <h2>Alcohol for the modern drinker</h2>
-                    <p>Light and refreshing flavors made with real, clean ingredients you can feel good about. Just
-                        pour,
-                        sip, and enjoy.</p>
-
-                    <button type="button" class="btn btn-outline-dark">create your recipe</button>
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Сreate your own cocktail</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">My cocktail collection</a>
+                        </li>
+                    </ul>
                 </div>
+                <h2>Alcohol for the modern drinker</h2>
+                <p>Light and refreshing flavors made with real, clean ingredients you can feel good about. Just
+                    pour,
+                    sip, and enjoy.</p>
+
+                <button type="button" class="btn btn-outline-dark">create your recipe</button>
             </div>
         </div>
     </main>
+
+    <nav>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">A</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">B</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">C</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">D</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">E</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">F</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">G</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">H</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">I</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">J</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">K</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">L</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">M</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">N</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">O</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">P</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Q</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">R</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">S</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">T</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">U</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">V</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">W</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">X</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Y</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Z</a>
+            </li>
+    </nav>
     <footer>
         <div style="color: khaki;">Тут будут картинки соц сетей </div>
 

@@ -41,6 +41,28 @@
             grid-template-columns: 1fr 1fr;
         }
 
+        .alko {
+            Font: Liberation Serif;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            color: blanchedalmond;
+        }
+
+        .font {
+            font-size: 500%;
+        }
+
+
+        a:visited {
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: burlywood;
+        }
+
         @media (max-width: 459px) {
             .main {
                 display: flex;
@@ -48,6 +70,10 @@
             }
 
             .src {
+                display: none;
+            }
+
+            .NON {
                 display: none;
             }
         }
@@ -67,22 +93,26 @@
                 <div>
                     <ul class="nav justify-content-end">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                Сreate your own cocktail</a>
+                            <a class="nav-link" href="#">Сreate your own cocktail</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">My cocktail collection</a>
                         </li>
                     </ul>
-                </div>
-                <h2>Alcohol for the modern drinker</h2>
-                <p>Light and refreshing flavors made with real, clean ingredients you can feel good about. Just
-                    pour,
-                    sip, and enjoy.</p>
 
-                <button type="button" class="btn btn-outline-dark">create your recipe</button>
+
+                </div>
+                <div class="NON" style="height: 250px;"></div>
+                <div class="alko">
+                    <div>
+                        <p class="font">Alcohol for the modern drinker</p>
+                    </div>
+
+                    <p>Light and refreshing flavors made with real, clean ingredients you can feel good about. Just
+                        pour, sip, and enjoy.</p>
+                    <button type="button" class="btn btn-outline-dark">create your recipe</button>
+                </div>
             </div>
-        </div>
     </main>
 
     <nav>
@@ -166,6 +196,7 @@
                 <a class="nav-link active" href="#">Z</a>
             </li>
     </nav>
+
     <footer>
         <div style="color: khaki;">Тут будут картинки соц сетей </div>
 

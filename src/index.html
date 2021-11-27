@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="assets/magic-potion.png" type="image/png">
     <link rel="stylesheet" href="index.css">
     <script type="module" src="index.js"></script>
+    <script type="module" src="seti.js"></script>
     <style>
         html,
         body {
@@ -18,12 +19,13 @@
             margin: 0;
             padding: 0;
             overflow-x: hidden;
+            background-color: rgba(153, 107, 96, 1);
+
         }
 
         header,
         footer {
             background-color: black;
-            height: 50px;
             display: grid;
             align-items: center;
             justify-content: center;
@@ -49,8 +51,19 @@
             color: blanchedalmond;
         }
 
+        .menu {
+            display: grid;
+        }
+
         .font {
             font-size: 500%;
+        }
+
+        .nav-item {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            height: 80%;
         }
 
 
@@ -59,7 +72,7 @@
         }
 
         a:hover {
-            text-decoration: none;
+            text-decoration: underline;
             color: burlywood;
         }
 
@@ -67,6 +80,7 @@
             .main {
                 display: flex;
                 flex-direction: column;
+                font-size: 50%;
             }
 
             .src {
@@ -76,6 +90,8 @@
             .NON {
                 display: none;
             }
+
+
         }
     </style>
 </head>
@@ -88,31 +104,30 @@
         <div class="src">
             <img src="./assets/main-img.svg" width="100%">
         </div>
-        <div style="background-color:rgba(153, 107, 96, 1);">
+        <div>
             <div>
-                <div>
-                    <ul class="nav justify-content-end">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Сreate your own cocktail</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">My cocktail collection</a>
-                        </li>
-                    </ul>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Сreate your own cocktail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My cocktail collection</a>
+                    </li>
+                </ul>
 
-
-                </div>
-                <div class="NON" style="height: 250px;"></div>
-                <div class="alko">
-                    <div>
-                        <p class="font">Alcohol for the modern drinker</p>
-                    </div>
-
-                    <p>Light and refreshing flavors made with real, clean ingredients you can feel good about. Just
-                        pour, sip, and enjoy.</p>
-                    <button type="button" class="btn btn-outline-dark">create your recipe</button>
-                </div>
             </div>
+            <div class="NON" style="height: 250px;"></div>
+            <div class="alko">
+                <div>
+                    <p class="font">Alcohol for the modern drinker</p>
+                </div>
+
+                <p>Light and refreshing flavors made with real, clean ingredients you can feel good about. Just
+                    pour, sip, and enjoy.</p>
+                <button type="button" class="btn btn-outline-dark">create your recipe</button>
+            </div>
+        </div>
+
     </main>
 
     <nav>
@@ -197,9 +212,11 @@
             </li>
     </nav>
 
-    <footer>
-        <div style="color: khaki;">Тут будут картинки соц сетей </div>
+    <div class="menu" id="content"></div>
 
+
+    <footer>
+        <div style="color:burlywood;" class="social-share"></div>
     </footer>
 
 

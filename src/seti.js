@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const createShareHtml = function (title, shareData) {
       let anchorList = [];
       const anchorTemplate = function (item) {
-        return '<a href="' + item.href + '" style="color:red" target="_blank" rel="noopener">' + item.title + '</a>';
+        return '<a href="' + item.href + '" style="color: brown" target="_blank" rel="noopener">' + item.title + '</a>';
       }
       const wrapperTemplate = function (title, anchorList) {
         return '<div class="social-share__title">' + title + '</div><div class="social-share__items">' + anchorList.join('') + '</div>';

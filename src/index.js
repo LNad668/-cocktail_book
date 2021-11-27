@@ -11,18 +11,18 @@ fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a')
             let title = document.createElement("h1");
             let ingr = document.createElement("p");
             let img = document.createElement("img");
-            let link = document.createElement("a");
+            let link = document.createElement("a")
             link.href = "details.html";
             link.addEventListener("click", () => {
                 localStorage.setItem("details", JSON.stringify(drinks[i]))
             })
             title.innerHTML = drinks[i].strDrink;
-            ingr.innerHTML = drinks[i].strMeasure1 + drinks[i].strIngredient1;
+            ingr.innerHTML =  drinks[i].strIngredient1;
             img.src = drinks[i].strDrinkThumb;
             img.style.width = '300px';
             img.style.height = '300px';
-            link.append(title, img);
-            parent.append(ingr, link);
+            link.append(title, img );
+            parent.append(link); //тут был ingr
         }
     }) 
 
@@ -33,5 +33,5 @@ document.addEventListener("DOMContentLoaded", function (event) {
     document.querySelector("#img").src =detailsObject.strDrinkThumb;
     document.querySelector("#ingr").innerHTML = detailsObject.strMeasure1 + detailsObject.strIngredient1;
     img.style.width = '300px';
-            img.style.height = '300px';
+    img.style.height = '300px';
 });

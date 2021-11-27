@@ -53,19 +53,13 @@
 
         .menu {
             display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+
         }
 
         .font {
             font-size: 500%;
         }
-
-        .nav-item {
-            display: grid;
-            align-items: center;
-            justify-content: center;
-            height: 80%;
-        }
-
 
         a:visited {
             color: black;
@@ -89,6 +83,14 @@
 
             .NON {
                 display: none;
+            }
+
+            .menu {
+                display: grid;
+                grid-template-columns: 1fr;
+                align-items: center;
+                justify-content: center;
+
             }
 
 
@@ -131,24 +133,25 @@
     </main>
 
     <nav>
+        <h5 style="color:burlywood">Выберите название коктеля по первой букве </h5>
         <ul class="nav nav-tabs">
             <li class="nav-item">
-                <a class="nav-link active" href="#">A</a>
+                <button class="nav-link active" href="#">A</button>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="#">B</a>
+                <button class="nav-link active" href="#">B</button>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="#">C</a>
+                <button class="nav-link active" href="#">C</button>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="#">D</a>
+                <button class="nav-link active" href="#">D</button>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="#">E</a>
+                <button class="nav-link active" href="#">E</button>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="#">F</a>
+                <button class="nav-link active" href="#">F</button>
             </li>
             <li class="nav-item">
                 <a class="nav-link active" href="#">G</a>

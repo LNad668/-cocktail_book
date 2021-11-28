@@ -17,9 +17,12 @@ document.addEventListener("submit", (event) => {
     document.getElementById("nonalko-error").innerHTML = "";
     document.getElementById("extra-error").innerHTML = "";
     document.getElementById("instructions-error").innerHTML = "";
+
+   
     
     let errorsArr = [];
     let createdDrinks = [];
+    
 
     if (titleForm.value == "") {
        document.getElementById("title-error").innerHTML += "Oops, something went wrong! Please fill in this field";
@@ -61,7 +64,7 @@ document.addEventListener("submit", (event) => {
 
         // Садаф, посмотри что тут в ключ берется. с таким значением ключа мне дает много напитков добавить в хранилище. Проверь у себя, видишь ли ты их. Либо попробуй в getItem через `` и ${} key их взять
 
-       localStorage.setItem(titleForm.value, JSON.stringify(createdDrinks));
+       localStorage.setItem("favorites", JSON.stringify(createdDrinks)); // ключ я ставлю, который стоит в избранных 
 
        parent.innerHTML = "";
        main.style.backgroundColor = "#f69a73";
@@ -93,6 +96,8 @@ document.addEventListener("submit", (event) => {
     }
 
     console.log(createdDrinks);
+
+    document.location.href = "/cocktail_book/src/page3/index.html"  // и тут добавила путь к избранной папке. 
 
 
  }

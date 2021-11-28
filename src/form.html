@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Magic potion</title>
+   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+   <link rel="shortcut icon" href="assets/magic-potion.png" type="image/png">
+   <link rel="stylesheet" href="form.css">
+   <script type="module" src="form.js"></script>
+
+</head>
+
+<body>
+   <div class="header__atop"><a href="#"><img src="assets/logo.svg" alt="логотип"></a></div>
+   <header class="header__main"></header>
+
+   <main id="main">
+      
+
+         <form class="decor">
+            <div class="form-left-decoration"></div>
+            <div class="form-right-decoration"></div>
+            <div class="circle"></div>
+            <div class="form-inner">
+
+               <h3>create your recipe</h3>
+
+               <input type="text" class="form__input" placeholder="title" id="title" value="">
+               <div class="title-error" id="title-error"></div>
+
+               <p class="form-text">choose alcohol</p>
+
+               <div class="form_select">
+                  <select name="alko" id="alko" class="form__input">
+                     <option selected disabled></option>
+                     <option value="vodka">vodka</option>
+                     <option value="martini">martini</option>
+                     <option value="whiskey">whiskey</option>
+
+                  </select>
+
+               </div>
+               <div class="alko-error" id="alko-error"></div>
+
+               <p class="form-text">choose additive</p>
+
+               <div class="form_select">
+                  <select name="additive" id="nonAlko" class="form__input">
+                     <option selected disabled></option>
+                     <option value="apple juice">apple juice</option>
+                     <option value="cola">cola</option>
+                     <option value="soda">soda</option>
+
+                  </select>
+
+               </div>
+               <div class="nonalko-error" id="nonalko-error"></div>
+
+               <p class="form-text">put some</p>
+
+               <input type="text" placeholder="extra ingredients" value="" id="extraIngr" class="form__input">
+               <div class="extra-error" id="extra-error"></div>
+
+               <p class="form-text">...and now tell us</p>
+
+               <textarea placeholder="how to make your potion" rows="3" id="instructions" value=""
+                  class="form__input"></textarea>
+               <div class="instructions-error" id="instructions-error"></div>
+
+               <input type="submit" value="let's create!" id="create" class="form__input">
+            </div>
+      
+     
+   </main>
+
+   <footer>
+      <div class="footer__main"></div>
+      <div class="footer__bottom">
+         <a href="#">© Haus 2021</a>
+         <a href="#">Contact Us</a>
+         <a href="#">Return Policy</a>
+         <a href="#">Terms & Conditions</a>
+         <a href="#"><img src="assets/logo.svg" alt="логотип"></a></div>
+   </footer>
+
+</body>
+
+</html>

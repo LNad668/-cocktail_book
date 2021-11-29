@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="shortcut icon" href="assets/magic-potion.png" type="image/png">
-    <link rel="stylesheet" href="index.css">
-    <script type="module" src="index.js"></script>
+    <link rel="stylesheet" href="example.css">
+    <script type="module" src="example.js"></script>
     <script type="module" src="seti.js"></script>
+    <script type="module" src="test.js"></script>
     <style>
         html,
         body {
@@ -20,18 +21,11 @@
             padding: 0;
             overflow-x: hidden;
             background-color: rgba(153, 107, 96, 1);
-
         }
 
         header,
         footer {
             background-color: black;
-            display: grid;
-            align-items: center;
-            justify-content: center;
-        }
-
-        nav {
             display: grid;
             align-items: center;
             justify-content: center;
@@ -51,12 +45,6 @@
             color: blanchedalmond;
         }
 
-        .menu {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-
-        }
-
         .font {
             font-size: 500%;
         }
@@ -70,12 +58,16 @@
             color: burlywood;
         }
 
+        .input-group {
+            display: flex;
+            text-align: center;
+        }
+
         @media (max-width: 459px) {
             .main {
                 display: flex;
                 flex-direction: column;
                 font-size: 50%;
-
             }
 
             .src {
@@ -85,16 +77,6 @@
             .NON {
                 display: none;
             }
-
-            .menu {
-                display: grid;
-                grid-template-columns: 1fr;
-                align-items: center;
-                justify-content: center;
-
-            }
-
-
         }
     </style>
 </head>
@@ -111,7 +93,7 @@
             <div>
                 <ul class="nav justify-content-end">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Сreate your own cocktail</a>
+                        <a class="nav-link" href="form.html">Сreate your own cocktail</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">My cocktail collection</a>
@@ -133,97 +115,23 @@
 
     </main>
 
-    <nav>
-        <h5 style="color:burlywood">Выберите название коктеля по первой букве </h5>
-        <ul class="nav nav-tabs">
-            <li class="nav-item">
-                <button class="nav-link active" href="#">A</button>
-            </li>
-            <li class="nav-item">
-                <button class="nav-link active" href="#">B</button>
-            </li>
-            <li class="nav-item">
-                <button class="nav-link active" href="#">C</button>
-            </li>
-            <li class="nav-item">
-                <button class="nav-link active" href="#">D</button>
-            </li>
-            <li class="nav-item">
-                <button class="nav-link active" href="#">E</button>
-            </li>
-            <li class="nav-item">
-                <button class="nav-link active" href="#">F</button>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="#">G</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="#">H</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="#">I</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="#">J</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="#">K</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="#">L</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="#">M</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="#">N</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="#">O</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="#">P</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="#">Q</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="#">R</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="#">S</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="#">T</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="#">U</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="#">V</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="#">W</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="#">X</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="#">Y</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="#">Z</a>
-            </li>
-    </nav>
+    <div class="request">
+        <div class="input-group mb-3">
+            <input type="text" id="request">
+            <button type="submit" onclick="searchImg()" class="btn btn-outline-dark">Найти!</button>
+        </div>
 
-    <div class="menu" id="content"></div>
+        <div id="content" class="content">
+        </div>
+        <div id="drinkContainer" class="drinkContainer"></div>
+    </div>
 
 
     <footer>
         <div style="color:burlywood;" class="social-share"></div>
     </footer>
 
-
+    <script src="test.js"></script>
 </body>
 
 </html>

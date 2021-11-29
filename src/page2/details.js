@@ -11,19 +11,19 @@ document.addEventListener("DOMContentLoaded", function (event) {
    // img.style.height = '300px';
    detailsDrink.innerHTML = "";
     let drinkImgContainer = document.createElement('div');
-    drinkImgContainer.style.width = '40%';
-    drinkImgContainer.className = "drink-render-container";
+    drinkImgContainer.style.width = '100%';
     detailsDrink.append(drinkImgContainer);
 
     let drinkRenderImg = document.createElement('img');
     drinkRenderImg.src = detailsObject.strDrinkThumb;
     drinkRenderImg.style.width = '500px';
-    drinkRenderImg.style.height = '500px';
+    drinkRenderImg.style.height = '400px';
+    drinkRenderImg.style.marginLeft = '30%';
     drinkImgContainer.appendChild(drinkRenderImg);
 
     let drinkDetailsContainer = document.createElement('div');
-    drinkDetailsContainer.style.width = '40%';
-    drinkDetailsContainer.className = "drink-render-details-container";
+    drinkDetailsContainer.style.width = '50%';
+    drinkDetailsContainer.style.marginLeft ='30%'
     detailsDrink.append(drinkDetailsContainer);
 
     let drinkRenderTitle = document.createElement('div');

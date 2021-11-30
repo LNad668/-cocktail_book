@@ -90,7 +90,7 @@ function searchImg() {
 
                             let favButton = document.createElement('button');
                             favButton.className = "favButton";
-                            favButton.innerHTML = "♥";
+                            favButton.innerHTML = "Добавить в мою коллекцию ♥";
                             drinkDetailsContainer.appendChild(favButton);
                             favButton.focus();
 
@@ -102,24 +102,13 @@ function searchImg() {
 
                                 localStorage.setItem(drinkRenderTitle.innerHTML, JSON.stringify(
                                     favDrinks));
-
-
                                // console.log(favDrinks);
-
-
-                                
-                                  
-                                  
-                                  
                             }
 
                         })
 
                         .catch(err => console.log(err));
-
                 }
-
-
             }
         })
         .catch(err => console.log(err));

@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
             localStorage.setItem("favorites", JSON.stringify(favoritesFromStorage));
 
-            document.location.href = "/cocktail_book/src/page3/index.html";
+            document.location.href = "/cocktail_book/src/favorites/index.html";
         } else {
             window.alert('Упс. Вы уже добавили этот коктейль :(')
         }

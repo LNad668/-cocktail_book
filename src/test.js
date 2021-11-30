@@ -101,7 +101,7 @@ function searchImg() {
 
                                 localStorage.setItem(drinkRenderTitle.innerHTML, JSON.stringify(
                                     favDrinks));
-                                    document.location.href = "/cocktail_book/src/page3/index.html";
+                                    document.location.href = "/cocktail_book/src/favorites/index.html";
 
 
 

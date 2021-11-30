@@ -96,7 +96,7 @@ function searchImg() {
 
                             favButton.onclick = function saveToFav() {
                                 let favDrinks = [];
-                                //favDrinks.push(drinkRenderTitle.innerHTML);
+                                favDrinks.push(drinkRenderTitle.innerHTML);
                                 favDrinks.push(drinkRenderIngr.innerHTML);
                                 favDrinks.push(drinkRenderImg.src);
 

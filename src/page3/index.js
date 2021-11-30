@@ -6,11 +6,16 @@ for (var i = 0; i < localStorage.length; i++) {
    // var value = localStorage.getItem(key); 
    
     const data = JSON.parse(localStorage.getItem(key))
-    const data1 = localStorage.getItem(key)
-     let res = document.createElement('p');
+ 
+     let title = document.createElement('h1');
+     let res =document.createElement('p')
      let img = document.createElement('img');
-    res.innerHTML = 'Title: ' + key + '<br>' + 'Recipe: ' + data.join(', ');
-    img.src = data1[1]
+  
+    title.innerHTML = data[0];
+    res.innerHTML = data[1];
+    img.src = data[2];
+    img.style.width = '300px';
+    img.style.height = '300px';
                  
-       parent.append(res, img);
+       parent.append(title, res, img);
   }

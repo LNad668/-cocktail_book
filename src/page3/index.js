@@ -1,19 +1,16 @@
 let parent = document.getElementById("title");
-document.addEventListener("DOMContentLoaded", function (event) {
-    const favoritesObject = JSON.parse(localStorage.getItem("favorites"));
-    console.log(favoritesObject);
-
-
-    for (let i = 0; i <  favoritesObject.length; i++) {
-        let title = document.createElement("h1");
-        let ingr = document.createElement("p");
-        let img = document.createElement("img");
-        title.innerHTML = favoritesObject[i].strDrink;
-        ingr.innerHTML = favoritesObject[i].strMeasure1 + favoritesObject[i].strIngredient1;
-        img.src = favoritesObject[i].strDrinkThumb;
-
-    img.style.width = '300px';
-    img.style.height = '300px';
-    parent.append(ingr, title, img);    
-}
-});
+for (var i = 0; i < localStorage.length; i++) {
+    // set iteration key name
+    var key = localStorage.key(i);
+    // use key name to retrieve the corresponding value
+   // var value = localStorage.getItem(key); 
+   
+    const data = JSON.parse(localStorage.getItem(key))
+    const data1 = localStorage.getItem(key)
+     let res = document.createElement('p');
+     let img = document.createElement('img');
+    res.innerHTML = 'Title: ' + key + '<br>' + 'Recipe: ' + data.join(', ');
+    img.src = data1[1]
+                 
+       parent.append(res, img);
+  }

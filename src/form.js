@@ -64,7 +64,7 @@ document.addEventListener("submit", (event) => {
 
         // Садаф, посмотри что тут в ключ берется. с таким значением ключа мне дает много напитков добавить в хранилище. Проверь у себя, видишь ли ты их. Либо попробуй в getItem через `` и ${} key их взять
 
-       localStorage.setItem("favorites", JSON.stringify(createdDrinks)); // ключ я ставлю, который стоит в избранных 
+       localStorage.setItem(titleForm.value, JSON.stringify(createdDrinks)); // ключ я ставлю, который стоит в избранных 
 
        parent.innerHTML = "";
        main.style.backgroundColor = "#f69a73";

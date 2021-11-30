@@ -1,4 +1,3 @@
-
 document.addEventListener("submit", (event) => {
     event.preventDefault();
 });
@@ -102,7 +101,11 @@ function searchImg() {
 
                                 localStorage.setItem(drinkRenderTitle.innerHTML, JSON.stringify(
                                     favDrinks));
-                               // console.log(favDrinks);
+                                    document.location.href = "/cocktail_book/src/page3/index.html";
+
+
+
+
                             }
 
                         })

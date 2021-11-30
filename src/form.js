@@ -82,22 +82,25 @@ document.addEventListener("submit", (event) => {
        buttonToCollection.type = 'text';
        buttonToCollection.className = "button_fav";
        buttonToCollection.innerHTML = "My collection";
-       buttonToCollection.href = "#";
-       
+       buttonToCollection.onclick = function() {
+         window.location.href = '/cocktail_book/src/page3/index.html';
+     };
+
        finishBlock.appendChild(buttonToCollection);
 
        let buttonToMain = document.createElement('button');
        buttonToMain.type = 'text';
        buttonToMain.className = "button_main";
        buttonToMain.innerHTML = "Back to main";
-       buttonToMain.href = "#";
-       
+       buttonToMain.onclick = function() {
+         window.location.href = '/cocktail_book/src/index.html';
+     };
+             
        finishBlock.appendChild(buttonToMain);
     }
 
     console.log(createdDrinks);
 
-    document.location.href = "/cocktail_book/src/page3/index.html"  // и тут добавила путь к избранной папке. 
-
+ 
 
  }

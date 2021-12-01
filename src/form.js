@@ -21,15 +21,16 @@ document.addEventListener("submit", (event) => {
    
     
     let errorsArr = [];
-    let createdDrinks = [];
+    let createdDrinks = ["https://i.ibb.co/q7L9Jb8/4f75c983c542e08a403ca9bfbd498710.jpg"];
     
 
     if (titleForm.value == "") {
        document.getElementById("title-error").innerHTML += "Oops, something went wrong! Please fill in this field";
        errorsArr.push(document.getElementById("title-error").innerHTML);
-    } else {
-       createdDrinks.push(titleForm.value);
-    }
+    } 
+    //else {
+    //   createdDrinks.push(titleForm.value);
+   // }
     if (selectAlkoForm.value == "") {
        document.getElementById("alko-error").innerHTML +=
           "Oops, something went wrong!<br> Please fill in this field";
@@ -83,7 +84,7 @@ document.addEventListener("submit", (event) => {
        buttonToCollection.className = "button_fav";
        buttonToCollection.innerHTML = "My collection";
        buttonToCollection.onclick = function() {
-         window.location.href = '/cocktail_book/src/page3/index.html';
+         window.location.href = '/cocktail_book/src/favorites/index.html';
      };
 
        finishBlock.appendChild(buttonToCollection);

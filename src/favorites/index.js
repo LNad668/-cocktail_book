@@ -11,9 +11,14 @@ for (var i = 0; i < localStorage.length; i++) {
      let res =document.createElement('p')
      let img = document.createElement('img');
   
-    title.innerHTML = data[0];
-    res.innerHTML = data[1];
-    img.src = data[2];
+     // подправила, чтобы src был 0 элементом массива, название равно ключу key
+
+    // title.innerHTML = data[1];
+    title.innerHTML = key;
+
+    // тут вывела в строку через запятую остальные элементы массива - ингридиенты
+    res.innerHTML = data[1] + ', ' + data[2] + ', ' + data[3];
+    img.src = data[0];
     img.style.width = '300px';
     img.style.height = '300px';
                  

@@ -29,9 +29,15 @@ function searchImg() {
 
                 // тут некоторых элементов нету, но как проверить null ингридиентов или нет, я хз
 
-                let ingr = document.createElement('div');
-                ingr.innerHTML += item.strMeasure1 + item.strIngredient1 + '<br>' + item.strMeasure2 + item
-                    .strIngredient2 + '<br>' + item.strMeasure3 + item.strIngredient3;
+                let ingr1 = document.createElement('div');
+                ingr1.innerHTML += item.strMeasure1 + item.strIngredient1;
+                
+                    let ingr2 = document.createElement('div');
+                    ingr2.innerHTML += item.strMeasure2 + item
+                        .strIngredient2;
+
+                        let ingr3 = document.createElement('div');
+                        ingr3.innerHTML += item.strMeasure3 + item.strIngredient3;
 
                 let instructions = document.createElement('div');
                 instructions.innerHTML += item.strInstructions;
@@ -77,10 +83,20 @@ function searchImg() {
                             drinkRenderTitle.innerHTML = `${title.innerHTML}`;
                             drinkDetailsContainer.appendChild(drinkRenderTitle);
 
-                            let drinkRenderIngr = document.createElement('div');
-                            drinkRenderIngr.className = "renderIngr";
-                            drinkRenderIngr.innerHTML = `${ingr.innerHTML}`;
-                            drinkDetailsContainer.appendChild(drinkRenderIngr);
+                            let drinkRenderIngr1 = document.createElement('div');
+                            drinkRenderIngr1.className = "renderIngr";
+                            drinkRenderIngr1.innerHTML = `${ingr1.innerHTML}`;
+                            drinkDetailsContainer.appendChild(drinkRenderIngr1);
+
+                            let drinkRenderIngr2 = document.createElement('div');
+                            drinkRenderIngr2.className = "renderIngr";
+                            drinkRenderIngr2.innerHTML = `${ingr2.innerHTML}`;
+                            drinkDetailsContainer.appendChild(drinkRenderIngr2);
+
+                            let drinkRenderIngr3 = document.createElement('div');
+                            drinkRenderIngr3.className = "renderIngr";
+                            drinkRenderIngr3.innerHTML = `${ingr3.innerHTML}`;
+                            drinkDetailsContainer.appendChild(drinkRenderIngr3);
 
                             let drinkRenderInstr = document.createElement('div');
                             drinkRenderInstr.className = "renderInstr";
@@ -89,15 +105,25 @@ function searchImg() {
 
                             let favButton = document.createElement('button');
                             favButton.className = "favButton";
+
+                            // если дописать *добавить в коллекцию, кнопку в css надо подредактировать
+
                             favButton.innerHTML = "Добавить в мою коллекцию ♥";
                             drinkDetailsContainer.appendChild(favButton);
                             favButton.focus();
 
                             favButton.onclick = function saveToFav() {
                                 let favDrinks = [];
-                                favDrinks.push(drinkRenderTitle.innerHTML);
-                                favDrinks.push(drinkRenderIngr.innerHTML);
+
+                                //вывела на 0 элемент массива src
+
                                 favDrinks.push(drinkRenderImg.src);
+                             //   favDrinks.push(drinkRenderTitle.innerHTML);
+                             // тут разделила ингридиенты из 1 переменной в 3, чтобы выведенный сохраненный массив напитка равнялся созданному
+                                favDrinks.push(drinkRenderIngr1.innerHTML);
+                                favDrinks.push(drinkRenderIngr2.innerHTML);
+                                favDrinks.push(drinkRenderIngr3.innerHTML);
+                                
 
                                 localStorage.setItem(drinkRenderTitle.innerHTML, JSON.stringify(
                                     favDrinks));

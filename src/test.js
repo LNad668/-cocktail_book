@@ -108,7 +108,7 @@ function searchImg() {
 
                             // если дописать *добавить в коллекцию, кнопку в css надо подредактировать
 
-                            favButton.innerHTML = "Добавить в мою коллекцию ♥";
+                            favButton.innerHTML = "Добавить в коллекцию ♥";
                             drinkDetailsContainer.appendChild(favButton);
                             favButton.focus();
 
@@ -128,10 +128,6 @@ function searchImg() {
                                 localStorage.setItem(drinkRenderTitle.innerHTML, JSON.stringify(
                                     favDrinks));
                                     document.location.href = "/cocktail_book/src/favorites/index.html";
-
-
-
-
                             }
 
                         })

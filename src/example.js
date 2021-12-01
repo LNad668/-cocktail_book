@@ -94,7 +94,7 @@ function searchDrinks() {
 
                             let favButton = document.createElement('button');
                             favButton.className = "favButton";
-                            favButton.innerHTML = "Сохранить ♥";
+                            favButton.innerHTML = "Добивить в коллекцию ♥";
                             drinkDetailsContainer.appendChild(favButton);
                             favButton.focus();
 

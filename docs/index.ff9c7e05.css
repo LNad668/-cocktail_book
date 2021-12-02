@@ -1,0 +1,77 @@
+.content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+img {
+    margin: 10px;
+}
+
+.main__titleDrink {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.main__drinkContainer {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 10px;
+}
+
+.main__drinkContainer:hover {
+    box-shadow: #787878 0 0 0.375rem;
+}
+
+.drinkContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+.drinkContainer1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.drink-render-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drink-render-details-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+}
+
+.renderTitle {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.renderIngr {
+    font-size: 20px;
+    margin: 15px;
+}
+
+.renderInstr {
+    font-size: 20px;
+    margin: 15px;
+}
+
+.favButton {
+    color: crimson;
+    border-radius: 15px;
+    box-shadow: #787878 0 0 0.175rem;
+    margin: 15px;
+}
+/*# sourceMappingURL=index.ff9c7e05.css.map */

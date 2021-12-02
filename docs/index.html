@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic potion</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/magic-potion.e3d5ce8f.png" type="image/png">
+    <link rel="stylesheet" href="/index.ff9c7e05.css">
+    <script src="/index.b9d0579d.js" defer=""></script>
+    <script src="/index.9dcf1892.js" defer=""></script>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background: rgba(153, 107, 96, 1);
+        }
+
+        header {
+            background-color: black;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+
+        main {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .alko,
+        h5 {
+            Font: Liberation Serif;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            color: blanchedalmond;
+        }
+
+        .font {
+            font-size: 500%;
+        }
+
+        a {
+            text-decoration: none;
+            color: #FFFFFF;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1em;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: burlywood;
+        }
+
+        .footer__main {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .footer__bottom {
+            height: 80px;
+            background-color: #191919;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            align-content: center;
+            color: #FFFFFF;
+        }
+
+        img {
+            margin: 0;
+            padding: 0;
+        }
+
+        .poisk {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            margin: 15px;
+        }
+
+
+        @media (max-width: 459px) {
+            .main {
+                display: flex;
+                flex-direction: column;
+                font-size: 50%;
+            }
+
+            .src {
+                display: none;
+            }
+
+            .NON {
+                display: none;
+            }
+        }
+    
+</style>
+</head>
+
+<body>
+    <header>
+        <img src="/logo.3dc501b1.svg">
+    </header>
+    <main class="main">
+        <div class="src">
+            <img src="/main-img.2dba77a7.svg" width="100%">
+        </div>
+        <div>
+            <div>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/form.html">Сreate your own cocktail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/favorites/index.html">My cocktail collection</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="NON" style="height: 250px;"></div>
+            <div class="alko">
+                <div>
+                    <p class="font">Alcohol for the modern drinker</p>
+                </div>
+
+                <p>Light and refreshing flavors made with real, clean ingredients you can feel good about. Just
+                    pour, sip, and enjoy.</p>
+                <a type="button" href="/favorites/index.html" class="btn btn-outline-dark">create your recipe</a>
+            </div>
+        </div>
+
+    </main>
+
+    <div class="poisk">
+        <div class="request">
+            <br class="input-group mb-3">
+            <h5>Cocktail search</h5>
+            <input type="text" id="request">
+            <button type="submit" id="poisk" class="btn btn-outline-dark">Search!</button>
+        </div>
+    </div>
+
+    <div id="content" class="content">
+    </div>
+    <div id="drinkContainer" class="drinkContainer"></div>
+    
+
+    <footer>
+        <div class="footer__main"></div>
+        <div class="footer__bottom">
+            <a href="#">© Haus 2021</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Return Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="/index.html"><img src="/logo.3dc501b1.svg" alt="логотип"></a>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

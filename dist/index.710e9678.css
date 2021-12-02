@@ -1,0 +1,63 @@
+
+h1{
+    color: burlywood;
+}
+
+        header,
+        footer {
+            background-color: black;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+
+        main {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .alko {
+            Font: Liberation Serif;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            color: blanchedalmond;
+        }
+
+        .font {
+            font-size: 500%;
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: burlywood;
+        }
+
+        @media (max-width: 459px) {
+            .main {
+                display: flex;
+                flex-direction: column;
+                font-size: 50%;
+
+            }
+
+            .src {
+                display: none;
+            }
+
+            .NON {
+                display: none;
+            }
+        }
+/*# sourceMappingURL=index.710e9678.css.map */

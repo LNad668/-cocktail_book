@@ -1,5 +1,5 @@
 node_modules
 .parcel-cache
-dist
+
 gpackage-lock.json
 package-lock.json

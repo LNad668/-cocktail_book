@@ -1,0 +1,93 @@
+
+ html,
+ body {
+     height: 100%;
+     margin: 0;
+     padding: 0;
+     overflow-x: hidden;
+     background: rgba(153, 107, 96, 1);
+ }
+
+ header {
+     background-color: black;
+     display: grid;
+     align-items: center;
+     justify-content: center;
+ }
+
+ main {
+     display: grid;
+     grid-template-rows: 1fr;
+     grid-template-columns: 1fr 1fr;
+ }
+
+ .alko,
+ h5 {
+     Font: Liberation Serif;
+     margin-left: auto;
+     margin-right: auto;
+     width: 80%;
+     color: blanchedalmond;
+ }
+
+ .font {
+     font-size: 500%;
+ }
+
+ a {
+     text-decoration: none;
+     color: #FFFFFF;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 1em;
+ }
+
+ a:hover {
+     text-decoration: underline;
+     color: burlywood;
+ }
+
+ .footer__main {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+
+ }
+
+ .footer__bottom {
+     height: 80px;
+     background-color: #191919;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     align-content: center;
+     color: #FFFFFF;
+ }
+
+ img {
+     margin: 0;
+     padding: 0;
+ }
+
+ .poisk {
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: center;
+     margin: 15px;
+ }
+
+
+ @media (max-width: 459px) {
+     .main {
+         display: flex;
+         flex-direction: column;
+         font-size: 50%;
+     }
+
+     .src {
+         display: none;
+     }
+
+     .NON {
+         display: none;
+     }
+ }

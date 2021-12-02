@@ -6,7 +6,7 @@ parent.innerHTML = "";
 let detailsDrink = document.getElementById("drinkContainer");
 detailsDrink.innerHTML = "";
 
-function searchImg() {
+document.getElementById("poisk").onclick = function createDrink() {
     let request = document.getElementById("request").value;
     fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?f=' + request)
 

@@ -6,7 +6,7 @@
   
   "scripts": {
     
-    "start": "parcel src/index.html src/form.html src/favorites/index.html"
+    "start": "parcel src/index.html src/form.html src/favorites/index.html --dist-dir docs"
   },
   "repository": {
     "type": "git",

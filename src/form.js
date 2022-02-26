@@ -79,7 +79,6 @@ document.getElementById("create").onclick = function createDrink() {
     buttonToCollection.innerHTML = "My collection";
     buttonToCollection.onclick = function () {
       window.location.href = "/cocktail_book/src/favorites/index.html";
-      // window.location.href = "./favorites/index.html";
     };
 
     finishBlock.appendChild(buttonToCollection);

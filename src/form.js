@@ -90,7 +90,6 @@ document.getElementById("create").onclick = function createDrink() {
     buttonToMain.innerHTML = "Back to main";
     buttonToMain.onclick = function () {
       window.location.href = "/cocktail_book/src/index.html";
-      // window.location.href = "index.html";
     };
 
     finishBlock.appendChild(buttonToMain);

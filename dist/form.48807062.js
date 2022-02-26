@@ -515,7 +515,7 @@ document.getElementById("create").onclick = function createDrink() {
         buttonToCollection.className = "button_fav";
         buttonToCollection.innerHTML = "My collection";
         buttonToCollection.onclick = function() {
-            window.location.href = "/cocktail_book/src/favorites/index.html";
+            window.location.href = "/cocktail_book/src/favorites.html";
         };
         finishBlock.appendChild(buttonToCollection);
         let buttonToMain = document.createElement("button");

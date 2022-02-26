@@ -546,8 +546,7 @@ document.getElementById("poisk").onclick = function createDrink() {
                         favDrinks.push(drinkRenderIngr2.innerHTML);
                         favDrinks.push(drinkRenderIngr3.innerHTML);
                         localStorage.setItem(drinkRenderTitle.innerHTML, JSON.stringify(favDrinks));
-                        document.location.href = //  "/cocktail_book/src/favorites/index.html";
-                        "./favorites/index.html";
+                        window.location.href = "/cocktail_book/src/favorites.html";
                     };
                 }).catch((err)=>console.log(err)
                 );

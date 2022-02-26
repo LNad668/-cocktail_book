@@ -118,9 +118,7 @@ document.getElementById("poisk").onclick = function createDrink() {
                   drinkRenderTitle.innerHTML,
                   JSON.stringify(favDrinks)
                 );
-                document.location.href =
-                  //  "/cocktail_book/src/favorites/index.html";
-                  "./favorites/index.html";
+                window.location.href = "/cocktail_book/src/favorites.html";
               };
             })
 

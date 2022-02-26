@@ -476,7 +476,7 @@ document.getElementById("create").onclick = function createDrink() {
     document.getElementById("instructions-error").innerHTML = "";
     let errorsArr = [];
     let createdDrinks = [
-        "https://i.ibb.co/q7L9Jb8/4f75c983c542e08a403ca9bfbd498710.jpg"
+        "https://i.ibb.co/q7L9Jb8/4f75c983c542e08a403ca9bfbd498710.jpg", 
     ];
     if (titleForm.value == "") {
         document.getElementById("title-error").innerHTML += "Oops, something went wrong! Please fill in this field";
@@ -504,30 +504,32 @@ document.getElementById("create").onclick = function createDrink() {
     console.log(errorsArr);
     if (errorsArr.length == 0) {
         // Садаф, посмотри что тут в ключ берется. с таким значением ключа мне дает много напитков добавить в хранилище. Проверь у себя, видишь ли ты их. Либо попробуй в getItem через `` и ${} key их взять
-        localStorage.setItem(titleForm.value, JSON.stringify(createdDrinks)); // ключ я ставлю, который стоит в избранных 
+        localStorage.setItem(titleForm.value, JSON.stringify(createdDrinks)); // ключ я ставлю, который стоит в избранных
         parent.innerHTML = "";
         main.style.backgroundColor = "#f69a73";
-        let finishBlock = document.createElement('div');
+        let finishBlock = document.createElement("div");
         finishBlock.className = "main__finishblock";
         parent.appendChild(finishBlock);
-        let imgFinal = document.createElement('img');
+        let imgFinal = document.createElement("img");
         imgFinal.src = "https://media.giphy.com/media/sXcFmzvXenHEpivJZc/giphy.gif";
         finishBlock.appendChild(imgFinal);
         imgFinal.focus();
-        let buttonToCollection = document.createElement('button');
-        buttonToCollection.type = 'text';
+        let buttonToCollection = document.createElement("button");
+        buttonToCollection.type = "text";
         buttonToCollection.className = "button_fav";
         buttonToCollection.innerHTML = "My collection";
         buttonToCollection.onclick = function() {
-            window.location.href = '/cocktail_book/src/favorites/index.html';
+            // window.location.href = '/cocktail_book/src/favorites/index.html';
+            window.location.href = "./favorites/index.html";
         };
         finishBlock.appendChild(buttonToCollection);
-        let buttonToMain = document.createElement('button');
-        buttonToMain.type = 'text';
+        let buttonToMain = document.createElement("button");
+        buttonToMain.type = "text";
         buttonToMain.className = "button_main";
         buttonToMain.innerHTML = "Back to main";
         buttonToMain.onclick = function() {
-            window.location.href = '/cocktail_book/src/index.html';
+            // window.location.href = '/cocktail_book/src/index.html';
+            window.location.href = "index.html";
         };
         finishBlock.appendChild(buttonToMain);
     }

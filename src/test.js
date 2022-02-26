@@ -101,8 +101,6 @@ document.getElementById("poisk").onclick = function createDrink() {
               let favButton = document.createElement("button");
               favButton.className = "favButton";
 
-              // если дописать *добавить в коллекцию, кнопку в css надо подредактировать
-
               favButton.innerHTML = "♥";
               drinkDetailsContainer.appendChild(favButton);
               favButton.focus();
@@ -121,8 +119,8 @@ document.getElementById("poisk").onclick = function createDrink() {
                   JSON.stringify(favDrinks)
                 );
                 document.location.href =
-                //  "/cocktail_book/src/favorites/index.html";
-                "./favorites/index.html";
+                  //  "/cocktail_book/src/favorites/index.html";
+                  "./favorites/index.html";
               };
             })
 

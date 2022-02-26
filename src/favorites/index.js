@@ -1,9 +1,6 @@
 let parent = document.getElementById("drinkContainer");
 for (let i = 0; i < localStorage.length; i++) {
-  // set iteration key name
   let key = localStorage.key(i);
-  // use key name to retrieve the corresponding value
-  // var value = localStorage.getItem(key);
 
   const data = JSON.parse(localStorage.getItem(key));
 

@@ -19,7 +19,7 @@ document.getElementById("create").onclick = function createDrink() {
 
   let errorsArr = [];
   let createdDrinks = [
-    "https://i.ibb.co/q7L9Jb8/4f75c983c542e08a403ca9bfbd498710.jpg",
+    "https://i2.piccy.info/i9/69456baf245a5ebd9c985ce5758cc2dd/1645905480/85995/1459774/4f75c983c542e08a403ca9bfbd498710.jpg",
   ];
 
   if (titleForm.value == "") {
@@ -27,9 +27,7 @@ document.getElementById("create").onclick = function createDrink() {
       "Oops, something went wrong! Please fill in this field";
     errorsArr.push(document.getElementById("title-error").innerHTML);
   }
-  //else {
-  //   createdDrinks.push(titleForm.value);
-  // }
+
   if (selectAlkoForm.value == "") {
     document.getElementById("alko-error").innerHTML +=
       "Oops, something went wrong!<br> Please fill in this field";
@@ -61,9 +59,7 @@ document.getElementById("create").onclick = function createDrink() {
   console.log(errorsArr);
 
   if (errorsArr.length == 0) {
-    // Садаф, посмотри что тут в ключ берется. с таким значением ключа мне дает много напитков добавить в хранилище. Проверь у себя, видишь ли ты их. Либо попробуй в getItem через `` и ${} key их взять
-
-    localStorage.setItem(titleForm.value, JSON.stringify(createdDrinks)); // ключ я ставлю, который стоит в избранных
+    localStorage.setItem(titleForm.value, JSON.stringify(createdDrinks));
 
     parent.innerHTML = "";
     main.style.backgroundColor = "#f69a73";
@@ -82,8 +78,8 @@ document.getElementById("create").onclick = function createDrink() {
     buttonToCollection.className = "button_fav";
     buttonToCollection.innerHTML = "My collection";
     buttonToCollection.onclick = function () {
-      // window.location.href = '/cocktail_book/src/favorites/index.html';
-      window.location.href = "./favorites/index.html";
+      window.location.href = "/cocktail_book/src/favorites/index.html";
+      // window.location.href = "./favorites/index.html";
     };
 
     finishBlock.appendChild(buttonToCollection);
@@ -93,8 +89,8 @@ document.getElementById("create").onclick = function createDrink() {
     buttonToMain.className = "button_main";
     buttonToMain.innerHTML = "Back to main";
     buttonToMain.onclick = function () {
-      // window.location.href = '/cocktail_book/src/index.html';
-      window.location.href = "index.html";
+      window.location.href = "/cocktail_book/src/index.html";
+      // window.location.href = "index.html";
     };
 
     finishBlock.appendChild(buttonToMain);

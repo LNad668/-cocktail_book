@@ -78,7 +78,8 @@ document.getElementById("create").onclick = function createDrink() {
     buttonToCollection.className = "button_fav";
     buttonToCollection.innerHTML = "My collection";
     buttonToCollection.onclick = function () {
-      window.location.href = "/cocktail_book/src/favorites.html";
+      // window.location.href = "/cocktail_book/src/favorites.html";
+      window.location.href = "favorites.html";
     };
 
     finishBlock.appendChild(buttonToCollection);
@@ -88,7 +89,8 @@ document.getElementById("create").onclick = function createDrink() {
     buttonToMain.className = "button_main";
     buttonToMain.innerHTML = "Back to main";
     buttonToMain.onclick = function () {
-      window.location.href = "/cocktail_book/src/index.html";
+      //window.location.href = "/cocktail_book/src/index.html";
+      window.location.href = "index.html";
     };
 
     finishBlock.appendChild(buttonToMain);

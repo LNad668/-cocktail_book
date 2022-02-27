@@ -11,13 +11,17 @@ for (let i = 0; i < localStorage.length; i++) {
   list.className = "main__drinkContainer";
   list.id = "main__drinkContainer";
   parent.append(list);
+
   let title = document.createElement("div");
   title.className = "main__titleDrink";
   title.id = "main__titleDrink";
   title.innerHTML = key;
+
   res.innerHTML = data[1] + ", " + data[2] + ", " + data[3];
+
   img.src = data[0];
   img.style.width = "400px";
   img.style.height = "400px";
+
   list.append(img, title, res);
 }

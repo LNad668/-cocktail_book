@@ -482,7 +482,6 @@ document.getElementById("poisk").onclick = function createDrink() {
             title.className = "main__titleDrink";
             title.id = "main__titleDrink";
             title.innerHTML += item.strDrink;
-            // тут некоторых элементов нету, но как проверить null ингридиентов или нет, я хз
             let ingr1 = document.createElement("div");
             ingr1.innerHTML += item.strMeasure1 + item.strIngredient1;
             let ingr2 = document.createElement("div");
@@ -546,7 +545,8 @@ document.getElementById("poisk").onclick = function createDrink() {
                         favDrinks.push(drinkRenderIngr2.innerHTML);
                         favDrinks.push(drinkRenderIngr3.innerHTML);
                         localStorage.setItem(drinkRenderTitle.innerHTML, JSON.stringify(favDrinks));
-                        window.location.href = "/cocktail_book/src/favorites.html";
+                        // window.location.href = "/cocktail_book/src/favorites.html";
+                        window.location.href = "favorites.html";
                     };
                 }).catch((err)=>console.log(err)
                 );
